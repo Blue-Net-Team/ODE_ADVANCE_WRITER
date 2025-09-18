@@ -16,19 +16,19 @@ C语言进阶写法
 源码链接https://github.com/dshuaib-666/CODE_ADVANCE_WRITER  。 （团队的上传文件有点搞不定，需要自取）。
 
 总结：打算要指针写法时
-...
+```
 定义一个led_operations类型的指针struct led_operations *board_demo_led_opr；
 而需要调取指针内部的参数/函数时，使用board_demo_led_opr->参数/函数(函数参数)
 需要定义一个指针处理函数时，定义一个传入参数为这个类型的函数 void led_counter(struct led_operations *opr)，
 然后在外界要调用这个函数来处理指针内部时，选择led_counter(&board_demo_led_opr);//输入指针地址
-...
+```
 打算要结构体写法时
-...
+```
 定义一个led_operations类型的结构体struct led_operations board_demo_led_opr；
 而需要调取结构体内部的参数/函数时，使用board_demo_led_opr.参数/函数(函数参数)
 需要定义一个结构体处理函数时，定义一个传入参数为这个类型的函数 void led_counter(struct led_operations opr)，
 然后在外界要调用这个函数来处理结构体内部时，选择led_counter(board_demo_led_opr);//输入结构体
-...
+```
 
 '代码框架'<br>
 ```
