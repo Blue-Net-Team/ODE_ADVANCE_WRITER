@@ -15,7 +15,7 @@ C语言进阶写法
 
 源码链接https://github.com/dshuaib-666/CODE_ADVANCE_WRITER  。 （团队的上传文件有点搞不定，需要自取）。
 
-总结：打算要指针写法时
+总结：一个类型可以定义成指针/结构体 打算要指针写法时
 ```
 定义一个led_operations类型的指针struct led_operations *board_demo_led_opr；
 而需要调取指针内部的参数/函数时，使用board_demo_led_opr->参数/函数(函数参数)
